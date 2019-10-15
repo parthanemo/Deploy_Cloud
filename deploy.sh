@@ -10,7 +10,7 @@ docker push parthanemo/multi-client:$SHA
 docker push parthanemo/multi-server:$SHA
 docker push parthanemo/multi-worker:$SHA
 
-kubectl apply -f k8s
-kubectl set image deployments/server-deployment server=parthanemo/multi-server:$SHA
-kubectl set image deployments/client-deployment client=parthanemo/multi-client:$SHA
-kubectl set image deployments/worker-deployment worker=parthanemo/multi-worker:$SHA
+# kubectl apply -f k8s
+# kubectl set image deployments/server-deployment server=parthanemo/multi-server:$SHA
+# kubectl set image deployments/client-deployment client=parthanemo/multi-client:$SHA
+# kubectl set image deployments/worker-deployment worker=parthanemo/multi-worker:$SHA

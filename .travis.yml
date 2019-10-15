@@ -23,8 +23,8 @@ before_install:
 script:
   - docker run parthanemo/deploycloud npm test -- --coverage
 
-# deploy:
-#   provider: script
-#   script: bash ./deploy.sh
-#   on:
-#     branch: master
+deploy:
+  provider: script
+  script: bash ./deploy.sh
+  on:
+    branch: master
